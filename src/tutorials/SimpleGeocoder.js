@@ -1,3 +1,4 @@
+import {Geocoder} from '../index';
 export default {
     template: `
         <div>
@@ -13,11 +14,24 @@ export default {
             <section class="hero is-light">
                 <div class="hero-body">
 
-        Hello
+        <div class="container">
+        <label class="label" for="">Geocoder</label>
+        <geocoder @selected="onSelected" api-key="{{ Your google api key here }}"></geocoder>
+        </div>
 
                 </div>
             </section>
             
         </div>
     `,
+
+    methods: {
+        onSelected( coordiante ) {
+            console.log(coordiante);
+        }
+    },
+
+    components: {
+        Geocoder,
+    },
 }
