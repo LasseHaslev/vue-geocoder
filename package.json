@@ -3,7 +3,7 @@
   "description": "Coordinates input using Vue",
   "version": "0.0.2",
   "author": "Lasse S. Haslev <lasse@haslev.no>",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "private": false,
   "repository": {
     "type": "git",
