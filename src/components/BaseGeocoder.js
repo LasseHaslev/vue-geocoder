@@ -3,6 +3,11 @@ export default {
     props: {
         'auto-close': {
             default: 1000,
+        },
+
+        placeholder: {
+            type:String,
+            default: 'Type in address to find coordinates',
         }
     },
 

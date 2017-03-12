@@ -1,20 +1,17 @@
-import InputTrigger from './InputTrigger';
 import BaseGeocoder from './BaseGeocoder';
 import UsesGoogleApi from './mixins/UsesGoogleApi';
+import {Autocomplete} from '@lassehaslev/vue-autocomplete';
 export default {
 
     mixins: [ BaseGeocoder, UsesGoogleApi ],
 
     template: `
         <div>
-        <input-trigger @blur="autoHide" @focus="show" @trigger="search" placeholder="Please insert the address you wish to find."></input-trigger>
-        <div v-if="showResults && items.length" class="panel is-default">
-            <a v-for="coordinate in items" @click.prevent="select( coordinate )" href="#" class="panel-block">{{ coordinate.address }}</a>
-        </div>
+            <autocomplete @selected="select" :placeholder="placeholder" :choice-adaptor="function( item ) { return item.address; }" :adaptor="format" :search="search"></autocomplete>
         </div>
     `,
 
     components: {
-        InputTrigger,
+        Autocomplete,
     }
 }

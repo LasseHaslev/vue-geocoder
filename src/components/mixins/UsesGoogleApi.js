@@ -9,10 +9,7 @@ export default {
 
     methods: {
         search( address ) {
-            var self = this;
-            Axios.get( this.buildUrl( address ) ).then( function(response) {
-                self.gotResults( response.data );
-            } );
+            return Axios.get( this.buildUrl( address ) );
         },
 
         gotResults( data ) {
@@ -24,7 +21,7 @@ export default {
         },
 
         format( data ) {
-            return data.results.map( function( item ) {
+            return data.data.results.map( function( item ) {
                 return {
                     'address': item.formatted_address,
                     'lat': item.geometry.location.lat,

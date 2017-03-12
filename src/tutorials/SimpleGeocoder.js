@@ -16,7 +16,7 @@ export default {
 
         <div class="container">
         <label class="label" for="">Geocoder</label>
-        <geocoder @selected="onSelected" api-key="{{ Your google api key here }}"></geocoder>
+        <geocoder @selected="onSelected" api-key=""></geocoder>
         </div>
 
                 </div>
