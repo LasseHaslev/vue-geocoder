@@ -1,7 +1,7 @@
 {
   "name": "@lassehaslev/vue-geocoder",
   "description": "Coordinates input using Vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Lasse S. Haslev <lasse@haslev.no>",
   "main": "dist/index.js",
   "private": false,
