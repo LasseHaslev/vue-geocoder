@@ -15,7 +15,7 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "@lassehaslev/vue-autocomplete": "^0.0.2",
+    "@lassehaslev/vue-autocomplete": "^0.0.3",
     "axios": "^0.15.3",
     "vue": "^2.1.0"
   },
