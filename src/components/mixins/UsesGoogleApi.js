@@ -5,6 +5,10 @@ export default {
 	        type: String,
 	        default: null,
 	    },
+        'limit-to-country': {
+	        type: String,
+            default: null
+        }
 	},
 
     methods: {
@@ -17,7 +21,7 @@ export default {
         },
 
         buildUrl(address) {
-            return 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&key=' + this.apiKey;
+            return 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&key=' + this.apiKey + '&components=country:'  + this.limitToCountry;
         },
 
         format( data ) {

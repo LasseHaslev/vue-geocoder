@@ -13,7 +13,7 @@
         <simple-geocoder></simple-geocoder>
 
         <div class="hero is-primary is-fullheight">
-            <div class="hero-body"ı
+            <div class="hero-body">
                 <div class="container is-fluid"></div>
             </div>
         </div>
