@@ -11,6 +11,13 @@ export default {
         </div>
     `,
 
+    props: ['setPoint'],
+
+    methods: {
+        select( coordinate ) {
+            this.setPoint({lat: coordinate.lat, lng: coordinate.lng});
+        }
+    },
     components: {
         Autocomplete,
     }
