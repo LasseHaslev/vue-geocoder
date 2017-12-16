@@ -1,8 +1,29 @@
-# @lassehaslev/vue-coordinates-input
-
+# @lassehaslev/vue-geocoder
 > Coordinates input using Vue
 
-## Build Setup
+## Install
+
+```bash
+# Install dependencies
+npm install @lassehaslev/vue-geocoder
+```
+
+## Usage
+
+Register component in javascript
+
+```js
+const Geocoder = require( '@lassehaslev/vue-geocoder' );
+Vue.component( 'geocoder', Geocoder );
+```
+
+Now your component is ready for usage
+```html
+<geocoder @selected="" api-key="" limit-to-country=""></geocoder>
+```
+
+
+## Development
 
 ``` bash
 # install dependencies
