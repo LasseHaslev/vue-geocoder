@@ -28,6 +28,7 @@ export default {
             window.clearTimeout( this.timeouter );
             this.showResults = true;
         },
+        
         hide() {
             this.showResults = false;
             window.clearTimeout( this.timeouter );
@@ -36,8 +37,6 @@ export default {
         autoHide() {
             window.clearTimeout( this.timeouter );
             this.timeouter = window.setTimeout( this.hide, this.autoClose );
-        },
-
-
+        }
     },
 }
